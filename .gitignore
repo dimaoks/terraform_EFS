@@ -1,3 +1,6 @@
 .terraform
 *.json
 *.exe
+*.pem
+*.pub
+/terraform_EFS/

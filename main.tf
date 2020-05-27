@@ -29,11 +29,11 @@ resource "aws_instance" "instance" {
     source      = "./authorized_keys"
     destination = "/home/ec2-user/.ssh/authorized_keys"*/
   connection {
-    type        = "ssh"
-    user        = "ec2-user"
-    private_key = "${file("./dima2.pem")}"
-    host_key    = "${file("./dima2.pub")}"
-    host        = self.public_ip
+    type = "ssh"
+    user = "ec2-user"
+    /*private_key = "${file("./dima2.pem")}"
+    host_key    = "${file("./dima2.pub")}"*/
+    host = self.public_ip
     /*agent       = "true"*/
     timmeout = "2m"
   }
