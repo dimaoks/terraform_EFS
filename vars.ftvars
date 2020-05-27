@@ -1,0 +1,15 @@
+variable "ami" {
+  default = "ami-01d025118d8e760db"
+  }
+
+variable "instance_type" {
+    default = "t2.micro"
+  }
+
+variable "security_groups" {
+      default = "sg-0c7082cc5dd3d247b"
+      }
+
+variable "AWS_REGION" {
+        default = "us-west-1"
+  }
